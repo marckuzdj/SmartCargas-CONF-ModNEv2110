@@ -605,7 +605,7 @@
           <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 11.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
         </svg>
       </div>
-      <h2 style="color: #8A05BE; margin: 0; font-size: 22px; font-weight: bold;">Conferência de Carga v202609.3</h2>
+      <h2 style="color: #8A05BE; margin: 0; font-size: 22px; font-weight: bold;">Conferência de Carga v202610.1</h2>
       <p style="color: #666; margin: 5px 0 0 0; font-size: 14px;">Selecione o estado de operação em doca</p>
     </div>
 
@@ -617,15 +617,15 @@
          <option value="AL">Alagoas (AL)</option> 
          <option value="AM">Amazonas (AM)</option>
          <option value="BA">Bahia (BA)</option>
-         <option value="CE">Ceará (CE)</option>  -->
+         <option value="CE">Ceará (CE)</option> 
          <option value="DF">Distrito Federal (DF)</option>
-         <option value="ES">Espírito Santo (ES)</option>
-         <option value="GO">Goiás (GO)</option>
-         <option value="MA">Maranhão (MA)</option>
-         <option value="MT">Mato Grosso (MT)</option>
-         <option value="MS">Mato Grosso do Sul (MS)</option>
+         <!-- <option value="ES">Espírito Santo (ES)</option> -->
+         <!-- <option value="GO">Goiás (GO)</option> -->
+         <!-- <option value="MA">Maranhão (MA)</option> -->
+         <!-- <option value="MT">Mato Grosso (MT)</option> -->
+         <!-- <option value="MS">Mato Grosso do Sul (MS)</option> -->
          <option value="MG">Minas Gerais (MG)</option>
-         <option value="PA">Pará (PA)</option>
+         <!-- <option value="PA">Pará (PA)</option> -->
          <option value="PR">Paraná (PR)</option>
          <option value="PB">Paraíba (PB)</option>
          <option value="PE">Pernambuco (PE)</option>
@@ -633,7 +633,7 @@
          <option value="RJ">Rio de Janeiro (RJ)</option>
          <option value="RN">Rio Grande do Norte (RN)</option>
          <option value="RS">Rio Grande do Sul (RS)</option>
-         <option value="RO">Rondônia (RO)</option>
+         <!-- <option value="RO">Rondônia (RO)</option> -->
          <option value="SC">Santa Catarina (SC)</option>
          <option value="SP">São Paulo (SP)</option>
          <option value="SE">Sergipe (SE)</option>
@@ -947,7 +947,7 @@
 
 <script>
 
-window.console.log = function() {};
+// window.console.log = function() {};
   
 // --- LÓGICA DE NAVEGAÇÃO E CADASTRO ---
 
@@ -957,7 +957,7 @@ window.console.log = function() {};
 // NOVO: DICIONÁRIO MESTRE DE REDE (Ajuste os links de deploy de cada UF)
 // =========================================================================
 const SCRIPTS_POR_UF = {
-  // "AL": "https://script.google.com/macros/s/AKfycbz65nNpHm4sljQsY7FtgJlFYRLNl0L7hiWYKXufbKX1Mu1ldxJRLjEbsR4mqI79uO82mA/exec",
+   "AL": "https://script.google.com/macros/s/AKfycbwm8L_GSbZFY6xU4ULUff6rjoxor6A2FbeYOepkfcOZkoXnaKsUXKHoDHc9yvXnYxBt/exec",
    "AM": "https://script.google.com/macros/s/AKfycbzML6V5L5EheoY116lHau70HTd-uXNa_SjQiLIAkjKV5gqY_FwzQUEItMxDHV7-fo2D/exec",
    "BA": "https://script.google.com/macros/s/AKfycbzgZNnUpmzceHLjl0A0KexRPEbRwTs_osMiKOzZxNjQNgM_jc94F3ny95uccH3w9kRr-g/exec",
    "CE": "https://script.google.com/macros/s/AKfycby84jZNvN4IrJ07p8wAbAtmLkMKK1Fu5cYdh-iTk3rzr6T5vCXPthUitXrXpc-7Y1-3/exec",
@@ -969,19 +969,19 @@ const SCRIPTS_POR_UF = {
   // "MS": "",
    "MG": "https://script.google.com/macros/s/AKfycbzbiEgg026B-Rj8d0njsgI-n9Lg3x0drezWzayRv6MMUT3aowlo2yQ4A7DBulnx9WcoXQ/exec",
   // "PA": "",
-  // "PB": "",
+   "PB": "https://script.google.com/macros/s/AKfycbyZFYNgerl2Sxv9wPdfjdk4rS11zppSpJL9a6f5nMLaBFl0m0kol9BxF4qk2dqms2M/exec",
    "PR": "https://script.google.com/macros/s/AKfycbz_VNwjmQ9hv3LkL5WHl2luVWZkrquNKPnPCXCyTXo4bYG8oSCTIqEtnCIIKt9fQtovrA/exec",
    "PE": "https://script.google.com/macros/s/AKfycbyTKX7dTx8MvU4Qh6javYDxUfipriEBM-qThacTQDNV7QL-6CsIC2FOaqHA80KOcYg/exec",
-  // "PI": "",
+   "PI": "https://script.google.com/macros/s/AKfycbzMaVKObwQad8-nDvOwMk-Loas9cnhG_hCilGc2i-l_EAG3NurAzIxAaNkInA7ZmIoh4A/exec",
    "RJ": "https://script.google.com/macros/s/AKfycbwEvZj_QZdiFcoUJmd-1CNLTOJXe8vQ2eOmu85OhgXN_dES_s54sKHIPUFTtbvzVNclwg/exec",
-  // "RN": "",
+   "RN": "https://script.google.com/macros/s/AKfycbyMfrNqFfeq-Ys1HS8SLCSk-upQO4Qxkj5c0bkLG5twLyGeBOiZUOKkpa4eZZ3l0euq/exec",
  //1
    "RS": "https://script.google.com/macros/s/AKfycbxHxI111jtkAxYeriRCmqfyoChC_D5nB68K9kbrKonv5FzIz5-0HZ3F85lkZhc7XFF0_Q/exec",
  //2 
   // "RS": "https://script.google.com/macros/s/AKfycbyCe3Z1lYMPn8f0DsSXA4p8O5F_Z-rW8Wv2r7c-akCn35cbf2mkPke8-v4n7hweYRrO7g/exec",
   // "RO": "",
    "SC": "https://script.google.com/macros/s/AKfycbyImZzz4VRzXF-UT_LLf4c93CYoqs3ojNycYCXk4ORM0Dz3nDIVDASGZIfA4ni3dC8H/exec",
-  // "SE": "",
+   "SE": "https://script.google.com/macros/s/AKfycbyaouZVAInvc7lRFyw-CJXmQQC0-3G8TrQ83lcm-VxhKSjPwiuJZRWU0QEMzLVuWgO1/exec",
   // 1 
    "SP": "https://script.google.com/macros/s/AKfycbycGHAZN01Fb2i9KHs3s0YXo7qdB2FPqoBFWasWyzV9DKbhCWIOprsjTseRJ-4GkfZpOg/exec"
   // 2
